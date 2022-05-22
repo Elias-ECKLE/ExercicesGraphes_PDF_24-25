@@ -37,6 +37,12 @@ int main() {
 	node noeud6;
 	noeud6.n_id = 6;
 	noeud6.f_posCoord = 19.f;
+	node noeud7;
+	noeud7.n_id = 7;
+	noeud7.f_posCoord = 27.f;
+	node noeud8;
+	noeud8.n_id = 7;
+	noeud8.f_posCoord = 27.f;
 
 	reseau net;
 	net.AjouterNoeud(noeud1);
@@ -45,12 +51,22 @@ int main() {
 	net.AjouterNoeud(noeud4);	
 	net.AjouterNoeud(noeud5);	
 	net.AjouterNoeud(noeud6);
+	//net.MaxMatrice();
 
+	//net.AfficherNoeuds();
+
+	
 	net.AfficherNoeuds();
+	net.AfficherMatrice();
+	    
+	net.AjouterNoeud(noeud7);
+	net.AfficherNoeuds();
+	net.AfficherMatrice();
+	//net.AfficherMatrice();
+	//net.AfficherNoeuds();
 
-	net.InitMatrice();
-
-
+	//net.AjouterNoeud(noeud8);
+	//net.AfficherMatrice();
 
 	return 0;
 }
